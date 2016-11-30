@@ -1,8 +1,8 @@
 [color]
 	ui = auto
 [user]
-	email = lutaoact@hotmail.com
-	name = lutaoact
+	email = wangtantan09@163.com
+	name = wangtantan
 [push]
 	default = current
 [core]
@@ -36,5 +36,3 @@
 	pl = pull
 	au = add -u
 	cam = commit -a -m
-[http]
-	proxy = 127.0.0.1:8123

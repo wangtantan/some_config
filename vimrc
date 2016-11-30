@@ -9,8 +9,9 @@ set enc=utf-8
 set fencs=utf-8,gb2312,euc-jp,shift-jis
 set noswapfile
 set laststatus=2
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set ruler
 set showcmd
 set showmatch
@@ -18,6 +19,7 @@ set cmdheight=3
 " set cursorline
 set nocursorline
 set wildmenu
+set clipboard=unnamed
 " set wildignore+=*/maui/server/common/*.js,*/gale_client/node_modules/gulp*,*/Blackfyre/out/Blackfyre/*,*/blacktest/node_modules/*,*/Blackfyre/node_modules/*,*/gale/node_modules/*,*/maui/node_modules/*,*/budweiser/node_modules/*,*/budweiser/server/test/*.js,*/maui/server/api/*.js,*/budweiser/server/api/*.js,*.map,*.less,*.css,*/bower_components/*,*.scss " for ctrlp.vim
 " ctrlp的忽略文件列表定义\v是vim指令，用于打开very magic
 let g:ctrlp_custom_ignore = {
@@ -42,6 +44,7 @@ set foldmethod=marker
 set suffixesadd=.js
 set keywordprg=:help
 set backspace=2
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " match OverLength /\%81v.\+/
 hi Comment ctermfg=6

@@ -6,16 +6,20 @@ function git_branch {
   echo "("${ref#refs/heads/}")";
 }
 
-PS1='\h:\u \W \[\033[1;32m\]$(git_branch)\[\033[0m\]\$ '
+PS1='\u \W \[\033[1;32m\]$(git_branch)\[\033[0m\]\$ '
 
 alias lsport='lsof -i -P | grep -i listen'
 alias redis-cli='redis-cli --raw' #让redis-cli正常显示中文
-#alias ls='ls -G' #for BSD ls
-alias ls='ls --color=auto' #for GNU ls
-#alias ll="ls -alFG" #for BSD ls
-alias ll="ls -alF" #for GNU ls
+alias ls='ls -G' #for BSD ls
+#alias ls='ls --color=auto' #for GNU ls
+alias ll="ls -alFG" #for BSD ls
+#alias ll="ls -alF" #for GNU ls
 alias grep='grep --color=auto'
 alias proxy='/Users/lutao/sshuttle/sshuttle -r aws 0/0 -vv'
+
+##### 慧保科技
+alias mgdev='mongo 121.40.82.99/huibaoDB -u huibao -p 1qaz2wsx'
+alias svdev='ssh node@121.40.121.237 -p 1722'
 
 #全局可用
 #alias validate_srt="perl ~/gale/scripts/validate_srt.pl"
