@@ -5,8 +5,9 @@
 	name = wangtantan
 [push]
 	default = current
+#	default = matching
+#	default = simple
 [core]
-	excludesfile = /Users/lutao/.gitignore_global
 	editor = vim
 	autocrlf = false
 	quotepath = false
@@ -28,11 +29,14 @@
 [alias]
 	s = status
 	br = branch
-	ss = status
+	ss = status -s
 	ds = diff --staged
 	d = diff
 	co = checkout
 	ps = push
 	pl = pull
 	au = add -u
+	ci = commit
 	cam = commit -a -m
+	toclean = clean -nd
+	doclean = clean -fd
